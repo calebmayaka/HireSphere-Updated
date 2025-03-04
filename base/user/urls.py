@@ -3,7 +3,7 @@ from django.urls import path
 
 # reset password library - provided by django by default
 from django.contrib.auth import views as auth_views
-# importing views 
+# importing views form the views.py file in this directory
 from .views import *
 
 urlpatterns = [
