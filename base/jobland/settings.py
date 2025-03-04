@@ -1,8 +1,10 @@
 # this import automatically configures the app for production in the postgres environment, it automatically configures many setttings such as 
 import django_heroku
+# importing the os module
 import os
+# importing path from the pathlib module
 from pathlib import Path
-
+ 
 from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent

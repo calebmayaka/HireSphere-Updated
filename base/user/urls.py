@@ -1,6 +1,7 @@
+# importing path from django.urls
 from django.urls import path
 
-# reset password library
+# reset password library - provided by django by default
 from django.contrib.auth import views as auth_views
 # importing views 
 from .views import *
