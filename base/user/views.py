@@ -72,7 +72,6 @@ def logout_user(request):
     logout(request)
     return redirect('login')
 
-
 @unauthenticated_user
 def applicant_register(request):
     if request.method == 'POST':

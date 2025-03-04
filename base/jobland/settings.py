@@ -1,3 +1,4 @@
+# this import automatically configures the app for production in the postgres environment, it automatically configures many setttings such as 
 import django_heroku
 import os
 from pathlib import Path
