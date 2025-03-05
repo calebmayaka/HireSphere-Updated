@@ -12,7 +12,7 @@ def match_skill(job_list, skill_list, preferred_job_list):
     recommendation_list = []
     for skill in skill_list:
         for job in job_list:
-            split_text = skill.skill_title.lower().split(' ')c
+            split_text = skill.skill_title.lower().split(' ')
             for s in split_text:
                 index = job.requirements.lower().find(s)
                 index1 = job.job_title.lower().find(s)
