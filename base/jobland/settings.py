@@ -102,19 +102,11 @@ WSGI_APPLICATION = 'jobland.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    # SQL Configuration
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'job',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost', 
-
-        # listening at port 3306
-        'PORT': '3306'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # SQLite database file stored in the project directory
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
