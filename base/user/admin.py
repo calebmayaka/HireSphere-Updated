@@ -1,14 +1,21 @@
+#  useradmin import to customize the user admin panel, defining what to display and search for
 from django.contrib.auth.admin import UserAdmin
+# importing admin module to register the models
 from django.contrib import admin
+# importing all from models in the same directory
 from .models import *
 
 # user admin class
 class AccountAdmin(UserAdmin):
+    # the fields to be displayed in the admin panel
     list_display = ('email', 'name', 'last_login', 'is_admin', 'is_applicant', 'is_company')
+    # the fields to be searched
     search_fields = ('email', 'name')
+    # the fields that are read only, hence cannot be edited from the panel
     readonly_fields = ('date_joined', 'last_login')
 
     filter_horizontal = ()
+    # the records are to be ordered by email
     ordering = ('email',)
     # list_filter = ()
     fieldsets = ()
